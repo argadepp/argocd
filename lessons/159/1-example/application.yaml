@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: git@github.com:argadepp/argocd.git
     targetRevision: main
-    path: environments/staging/my-app
+    path: environments/staging/my-app-base
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
