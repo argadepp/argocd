@@ -5,13 +5,13 @@ metadata:
   name: my-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: aputra/nginx-lesson159:~v0.1
+    argocd-image-updater.argoproj.io/image-list: 9673483686/helloworld:~v0.1
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: ssh://git@github.com/antonputra/lesson-159.git
+    repoURL: git@github.com:argadepp/argocd.git
     targetRevision: main
     path: environments/staging/my-app
   destination:
